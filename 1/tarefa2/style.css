@@ -1,0 +1,63 @@
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.game-board { 
+    border-spacing: 0; 
+    border-collapse: collapse; 
+}
+.game-board td { 
+    border: 2px solid; 
+    width: 2em; 
+    height: 2em; 
+}
+.game-board .alive { 
+    background: rgb(0, 255, 0); 
+}
+.title {
+    font-size: xx-large;
+    margin-bottom: 3rem;
+}
+.button {
+    border: none;
+    padding: 1.1rem 1.8rem;
+    border-radius: .1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button-small {
+    border: none;
+    padding: 1rem 1rem;
+    border-radius: .1rem;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: #9e9e9e;
+}
+.button-small:hover {
+    background-color: #9e9e9e;
+}
+.input-text {
+    padding: 1rem;
+}
+.section {
+    display: inline-flex;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.buttons {
+    margin-top: 2rem;
+}

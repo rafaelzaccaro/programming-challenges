@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/944680aa48.js" crossorigin="anonymous"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <title>Tarefa 1 - Conversor de Números Romanos</title>
+</head>
+<body>
+    <section class="section">
+        <div class="container">
+            <h1 class="title">Conversor de Números Romanos</h1>
+            <input class="input-text" type="text" placeholder="Ex: 1234 ou DCLXVI" id="source" oninput="this.value = this.value.toUpperCase()">
+            <button class="button-reverse" onclick="convert(document.querySelector('#source').value)"><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
+            <button class="button-reverse" onclick="reverse()"><i class="fa-solid fa-repeat"></i></button>
+            <input class="input-text" type="text" disabled id="final" value="">
+        </div>
+    </section>
+</body>
+</html>

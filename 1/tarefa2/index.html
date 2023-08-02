@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/944680aa48.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <title>Tarefa 2 - Jogo da Vida</title>
+</head>
+<body onload="init(10, 10)">
+    <section class="section">
+        <h1 class="title" >Jogo da Vida</h1>
+        <div id="board"></div>
+        <div class="buttons">
+            <button class="button" onclick="start()" id="start-button">Iniciar</button>
+            <button class="button" onclick="reset()">Resetar</button>
+            <button class="button" onclick="gameStep()">Avançar 1 geração</button>
+            <input class="input-text" type="text" disabled id="gen-display" value="Geração: 0">
+            <div style="flex-direction: column">
+                <label for="#board-size">Tamanho do tabuleiro:</label>
+                <input class="input-text" type="number" min="10" max="50" value="10" id="board-size">
+                <button class="button-small" onclick="init(document.querySelector('#board-size').value, document.querySelector('#board-size').value)"><i class="fa-solid fa-check"></i></button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <script src="https://kit.fontawesome.com/944680aa48.js" crossorigin="anonymous"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <title>Tarefa 3 - Divisor de conta de restaurante</title>
+</head>
+<body>
+    <h1 class="title">Calculadora de conta de restaurante</h1>
+    <section class="section">
+        <div class="main">
+            <label for="#client-name">Nome do cliente:</label>
+            <input class="client-name-text" type="text" id="client-name" placeholder="Ex: Victor Hugo">
+            <label for="#order-table">Pedido:</label>
+            <div class="tabeeb">
+                <table class="products-table" id="order-table">
+                    <thead>
+                        <tr>
+                            <th>Produto</th>
+                            <th>Qtd.</th>
+                            <th>Preço</th>
+                            <th class="centralized">Individual</th>
+                        </tr>
+                    </thead>
+                    <tbody id="products-table-body"></tbody>
+                </table>
+            </div>
+            <label for="#client-order">Adicionar produtos (Nome, Qtd, Preço):</label>
+            <div class="add-product">
+                <input class="client-products-text" id="client-order-name" placeholder="Ex: Coca-Cola">
+                <input class="client-products-number" id="client-order-quantity" placeholder="Ex: 5">
+                <input class="client-products-number" id="client-order-price" placeholder="Ex: 3">
+                <button onclick="addProduct()" class="button-small"><i class="fa-solid fa-check"></i></button>
+            </div>
+            <div class="checks">
+                <input type="checkbox" id="service-tax">
+                <label for="#service-tax" onclick="document.querySelector('#service-tax').checked = !document.querySelector('#service-tax').checked">Taxa de serviço?</label>
+                <input type="checkbox" id="ind-check">
+                <label for="#ind-check" onclick="document.querySelector('#ind-check').checked = !document.querySelector('#ind-check').checked">Produto Individual?</label>
+            </div>
+            <div class="buttons">
+                <button class="button-add" onclick="addClient()">Adicionar cliente</button>
+                <button class="button-finish" onclick="calc()">Finalizar comanda</button>
+            </div>
+        </div>
+        <div class="result">
+            <h2 class="subtitle">Valores finais</h2>
+            <textarea id="results" readonly rows="15" cols="35"></textarea>
+        </div>
+    </section>
+</body>
+</html>

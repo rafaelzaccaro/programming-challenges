@@ -1,0 +1,157 @@
+* {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 0;
+  outline: 0;
+}
+
+body {
+  height: 100%;
+}
+  
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.section {
+  height: 30vh;
+  display: flex;
+  text-align: left;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.client-name-text {
+  margin: 0 0 10px 0;
+  border: 1px solid black;
+  border-radius: .1rem;
+  height: 25px;
+  font-size: 15px;
+}
+
+.client-products-text {
+  margin: 0 10px 10px 0;
+  border: 1px solid black;
+  border-radius: .1rem;
+  height: 25px;
+  font-size: 15px;
+  width: 250px;
+}
+
+.client-products-number {
+  margin: 0 10px 10px 0;
+  border: 1px solid black;
+  border-radius: .1rem;
+  height: 25px;
+  font-size: 15px;
+  width: 35px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 10px 0;
+}
+
+.button-add {
+  font-size: 15px;
+  padding: 1.1rem 1.8rem;
+  margin: 4px 6px;
+  border-radius: .1rem;
+  color: #ffffff;
+  background-color: #3CB043;
+  border: none;
+  cursor: pointer;
+}
+
+.button-add:hover {
+  background-color: #3ba042;
+}
+
+.button-finish {
+  font-size: 15px;
+  padding: 1.1rem 1.8rem;
+  margin: 4px 6px;
+  border-radius: .1rem;
+  color: #ffffff;
+  background-color: #b30000;
+  border: none;
+  cursor: pointer;
+}
+
+.button-finish:hover {
+  background-color: #cf3636;
+}
+
+.button-small {
+  color: #ffffff;
+  background-color: #3CB043;
+  border: none;
+  height: 25px;
+  border-radius: .1rem;
+  box-sizing: border-box;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button-small:hover {
+  background-color: #3ba042;
+}
+
+.result {
+  margin-left: 25px;
+  margin-bottom: 11px;
+  text-align: center;
+}
+
+.result > textarea {
+  border-radius: .1rem;
+  border: 1px solid black;
+  resize: none;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+.title {
+  font-size: xx-large;
+  margin-bottom: 3rem;
+  display: flex;
+  margin-top: 30vh;
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+}
+
+.subtitle {
+  margin-bottom: 10px;
+}
+
+.products-table {
+  border: 1px solid black;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.add-product {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.tabeeb {
+  overflow-y: auto;
+  max-height: 200px;
+}
+
+.checks > label {
+  margin-right: 15px;
+}
+
+.centralized {
+  display: flex;
+  justify-content: center;
+}
